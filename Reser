@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Swachh Bharat Mission</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ///////////..utility classes../////////// */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+}
+
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+.reservations {
+  background-color: #196e04;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.reservation-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #0d5319;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.reservation-form h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.reservation-form form input,
+.reservation-form form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.reservation-form form button {
+  display: inline-block;
+  background-color: #196e04;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.reservation-form form button:hover {
+  background-color: #0d5319;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Categories</a></li>
+              <li><a href="index.html">Awarness</a></li>
+              <li><a href="workshop.html">Workshops</a></li>
+              <li><a href="reser.html">Collaboration</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+          </ul>
+            <h1 class="logo">Swachh Bharat Mission</h1>
+        </div>
+    </nav>
+
+<section class="reservations">
+    <div class="reservation-form">
+      <h2>Lets Collaboratee.....</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="Event Name" placeholder="Which Type Of event want" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <textarea name="message" placeholder="Additional Message" rows="5"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  </body>
+</html>
